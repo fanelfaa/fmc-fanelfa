@@ -1,0 +1,160 @@
+html {
+  font-size: 62.5%;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background: hsl(210deg, 46%, 95%);
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+.font-body {
+  font-size: 1.3rem;
+}
+
+.font-title {
+  font-size: 2rem;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+}
+
+section.testimonials {
+  margin: 4em 2em;
+  display: grid;
+  gap: 2em;
+}
+section.testimonials .testimony-card {
+  position: relative;
+  padding: 2em 2.5em 2.5em;
+  border-radius: 1em;
+  box-shadow: 1em 2em 3em rgba(207, 207, 207, 0.5);
+}
+section.testimonials .testimony-card .person {
+  display: flex;
+  align-items: flex-start;
+  -moz-column-gap: 1.5em;
+       column-gap: 1.5em;
+}
+section.testimonials .testimony-card .person .avatar {
+  width: 2.5em;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+section.testimonials .testimony-card .person .avatar img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+section.testimonials .testimony-card .person .name {
+  font-size: 1.3rem;
+}
+section.testimonials .testimony-card .title {
+  margin-top: 0.6em;
+}
+section.testimonials .testimony-card .excerpt {
+  margin-top: 2rem;
+}
+section.testimonials .testimony-card:nth-child(1) {
+  background-color: hsl(263deg, 55%, 52%);
+  color: hsl(0deg, 0%, 100%);
+}
+section.testimonials .testimony-card:nth-child(1) .person .status {
+  color: rgba(255, 255, 255, 0.5);
+}
+section.testimonials .testimony-card:nth-child(1) .excerpt {
+  margin-top: 2rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+section.testimonials .testimony-card:nth-child(1) * {
+  position: relative;
+  z-index: 2;
+}
+section.testimonials .testimony-card:nth-child(1) .quotation-pattern {
+  position: absolute;
+  top: 0;
+  right: 2em;
+  z-index: 1;
+}
+section.testimonials .testimony-card:nth-child(2) {
+  background-color: hsl(217deg, 19%, 35%);
+  color: hsl(0deg, 0%, 100%);
+}
+section.testimonials .testimony-card:nth-child(2) .person .status {
+  color: rgba(255, 255, 255, 0.5);
+}
+section.testimonials .testimony-card:nth-child(2) .excerpt {
+  margin-top: 2rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+section.testimonials .testimony-card:nth-child(3) {
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(217deg, 19%, 35%);
+}
+section.testimonials .testimony-card:nth-child(3) .person .status {
+  color: rgba(72, 85, 106, 0.5);
+}
+section.testimonials .testimony-card:nth-child(3) .excerpt {
+  margin-top: 2rem;
+  color: rgba(72, 85, 106, 0.7);
+}
+section.testimonials .testimony-card:nth-child(4) {
+  background-color: hsl(219deg, 29%, 14%);
+  color: hsl(0deg, 0%, 100%);
+}
+section.testimonials .testimony-card:nth-child(4) .person .status {
+  color: rgba(255, 255, 255, 0.5);
+}
+section.testimonials .testimony-card:nth-child(4) .excerpt {
+  margin-top: 2rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+section.testimonials .testimony-card:nth-child(5) {
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(217deg, 19%, 35%);
+}
+section.testimonials .testimony-card:nth-child(5) .person .status {
+  color: rgba(72, 85, 106, 0.5);
+}
+section.testimonials .testimony-card:nth-child(5) .excerpt {
+  margin-top: 2rem;
+  color: rgba(72, 85, 106, 0.7);
+}
+
+@media only screen and (min-width: 768px) {
+  section.testimonials {
+    display: grid;
+    grid-template-areas: "a a b" "c d d" "e e e";
+    grid-template-columns: repeat(3, 1fr);
+  }
+  section.testimonials .testimony-card:nth-child(1) {
+    grid-area: a;
+  }
+  section.testimonials .testimony-card:nth-child(2) {
+    grid-area: b;
+  }
+  section.testimonials .testimony-card:nth-child(3) {
+    grid-area: c;
+  }
+  section.testimonials .testimony-card:nth-child(4) {
+    grid-area: d;
+  }
+  section.testimonials .testimony-card:nth-child(5) {
+    grid-area: e;
+  }
+}
+@media only screen and (min-width: 992px) {
+  section.testimonials {
+    max-width: 992px;
+    grid-template-areas: "a a b e" "c d d e";
+    grid-template-columns: repeat(4, 1fr);
+  }
+}/*# sourceMappingURL=main.css.map */
