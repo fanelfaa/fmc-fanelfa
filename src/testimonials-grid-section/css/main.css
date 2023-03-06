@@ -1,7 +1,7 @@
 html {
   font-size: 62.5%;
   font-family: "Barlow Semi Condensed", sans-serif;
-  background: hsl(210deg, 46%, 95%);
+  background: hsl(210, 46%, 95%);
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -64,8 +64,8 @@ section.testimonials .testimony-card .excerpt {
   margin-top: 2rem;
 }
 section.testimonials .testimony-card:nth-child(1) {
-  background-color: hsl(263deg, 55%, 52%);
-  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(263, 55%, 52%);
+  color: hsl(0, 0%, 100%);
 }
 section.testimonials .testimony-card:nth-child(1) .person .status {
   color: rgba(255, 255, 255, 0.5);
@@ -85,8 +85,8 @@ section.testimonials .testimony-card:nth-child(1) .quotation-pattern {
   z-index: 1;
 }
 section.testimonials .testimony-card:nth-child(2) {
-  background-color: hsl(217deg, 19%, 35%);
-  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(217, 19%, 35%);
+  color: hsl(0, 0%, 100%);
 }
 section.testimonials .testimony-card:nth-child(2) .person .status {
   color: rgba(255, 255, 255, 0.5);
@@ -96,8 +96,8 @@ section.testimonials .testimony-card:nth-child(2) .excerpt {
   color: rgba(255, 255, 255, 0.7);
 }
 section.testimonials .testimony-card:nth-child(3) {
-  background-color: hsl(0deg, 0%, 100%);
-  color: hsl(217deg, 19%, 35%);
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(217, 19%, 35%);
 }
 section.testimonials .testimony-card:nth-child(3) .person .status {
   color: rgba(72, 85, 106, 0.5);
@@ -107,8 +107,8 @@ section.testimonials .testimony-card:nth-child(3) .excerpt {
   color: rgba(72, 85, 106, 0.7);
 }
 section.testimonials .testimony-card:nth-child(4) {
-  background-color: hsl(219deg, 29%, 14%);
-  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(219, 29%, 14%);
+  color: hsl(0, 0%, 100%);
 }
 section.testimonials .testimony-card:nth-child(4) .person .status {
   color: rgba(255, 255, 255, 0.5);
@@ -118,8 +118,8 @@ section.testimonials .testimony-card:nth-child(4) .excerpt {
   color: rgba(255, 255, 255, 0.7);
 }
 section.testimonials .testimony-card:nth-child(5) {
-  background-color: hsl(0deg, 0%, 100%);
-  color: hsl(217deg, 19%, 35%);
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(217, 19%, 35%);
 }
 section.testimonials .testimony-card:nth-child(5) .person .status {
   color: rgba(72, 85, 106, 0.5);
