@@ -29,7 +29,7 @@ body::before {
   inset: 0;
 }
 
-section {
+main {
   position: relative;
   z-index: 2;
   display: flex;
@@ -37,23 +37,23 @@ section {
   row-gap: 2rem;
   margin-inline: 2.5rem;
 }
-section > div {
+main > div {
   background-color: hsl(228, 56%, 26%);
   padding-inline: 4rem;
   padding-block: 3.5rem;
   border-radius: 1rem;
 }
-section .left {
+main .left {
   border-top-right-radius: 10rem;
 }
-section .left .actions {
+main .left .actions {
   margin-top: 3rem;
   display: flex;
   -moz-column-gap: 1rem;
        column-gap: 1rem;
   justify-content: flex-start;
 }
-section .left .actions > a {
+main .left .actions > a {
   border-radius: 1rem;
   background-color: hsl(229, 57%, 11%);
   padding: 1rem;
@@ -64,27 +64,29 @@ section .left .actions > a {
   aspect-ratio: 1/1;
   box-sizing: border-box;
 }
-section .right {
+main .right {
   color: white;
   font-size: 1.4rem;
   position: relative;
   padding-bottom: 5rem;
 }
-section .right > p {
+main .right > h1 {
   text-align: center;
   margin-bottom: 1.5rem;
+  font-size: 1em;
+  font-weight: 400;
 }
-section .right > p span {
+main .right > h1 span {
   font-weight: 700;
 }
-section .right .status .indicator {
+main .right .status .indicator {
   height: 1.4rem;
   border-radius: 0.7rem;
   padding: 0.2rem;
   box-sizing: border-box;
   background-color: hsl(229, 57%, 11%);
 }
-section .right .status .indicator .light {
+main .right .status .indicator .light {
   height: 1rem;
   border-radius: 0.5rem;
   width: 70%;
@@ -92,7 +94,7 @@ section .right .status .indicator .light {
   position: relative;
   transition: width 0.2s ease-in-out;
 }
-section .right .status .indicator .light::after {
+main .right .status .indicator .light::after {
   content: "";
   position: absolute;
   top: 0;
@@ -103,13 +105,13 @@ section .right .status .indicator .light::after {
   aspect-ratio: 1/1;
   background-color: white;
 }
-section .right .status .min-max {
+main .right .status .min-max {
   display: flex;
   justify-content: space-between;
   font-size: 0.8em;
   font-weight: 700;
 }
-section .right .storage-left {
+main .right .storage-left {
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -124,15 +126,29 @@ section .right .storage-left {
   padding: 1.5rem 2rem 1rem;
   font-weight: 700;
 }
-section .right .storage-left p {
+main .right .storage-left p {
   font-size: 4rem;
   margin-top: -0.7rem;
 }
-section .right .storage-left span {
+main .right .storage-left span {
   font-size: 1em;
   opacity: 0.7;
   text-transform: uppercase;
   white-space: nowrap;
+}
+
+.attribution {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 11px;
+  text-align: center;
+  color: white;
+  padding: 2rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
 
 @media only screen and (min-width: 768px) {
@@ -142,25 +158,25 @@ section .right .storage-left span {
     border-top-left-radius: 50vh;
     margin-top: auto;
   }
-  section {
+  main {
     width: 80rem;
     margin: 0 auto;
     flex-direction: row;
     gap: 2rem;
     align-items: flex-end;
   }
-  section .left {
+  main .left {
     width: 35%;
     box-sizing: border-box;
   }
-  section .right {
+  main .right {
     flex: 1;
     padding-block: 4rem;
   }
-  section .right > p {
+  main .right > p {
     text-align: left;
   }
-  section .right .storage-left {
+  main .right .storage-left {
     bottom: unset;
     left: unset;
     top: 0;
@@ -168,7 +184,7 @@ section .right .storage-left span {
     transform: translateY(-70%);
     border-bottom-right-radius: 0;
   }
-  section .right .storage-left::after {
+  main .right .storage-left::after {
     content: "";
     border: 2rem solid;
     position: absolute;

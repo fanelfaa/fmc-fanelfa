@@ -38,7 +38,7 @@ body::before{
     inset: 0;
 }
 
-section{
+main{
     position: relative;
     z-index: 2;
     display: flex;
@@ -82,9 +82,11 @@ section{
         position: relative;
         padding-bottom: 5rem;
 
-        & > p{
+        & > h1{
             text-align: center;
             margin-bottom: 1.5rem;
+            font-size: 1em;
+            font-weight: 400;
             span{
                 font-weight: 700;
             }
@@ -155,6 +157,20 @@ section{
     }
 }
 
+.attribution {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 11px;
+    text-align: center;
+    color: white;
+    padding: 2rem;
+    a {
+        color: hsl(228, 45%, 44%);
+    }
+}
+
 @media only screen and (min-width: 768px) {
     body::before{
         background-image: url(../assets/images/bg-desktop.png);
@@ -163,7 +179,7 @@ section{
         margin-top: auto;
     }
 
-    section{
+    main{
         width: 80rem;
         margin: 0 auto;
         flex-direction: row;
