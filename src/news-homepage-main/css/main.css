@@ -172,37 +172,37 @@ section.featured-article article .content p {
   header button.btn-menu {
     display: none;
   }
-  main.main-content {
+  .main-content {
     display: grid;
     grid-template-columns: 2fr 1fr;
     -moz-column-gap: 3rem;
          column-gap: 3rem;
   }
-  main.main-content section.headline img {
+  .main-content section.headline img {
     aspect-ratio: unset;
     -o-object-fit: cover;
        object-fit: cover;
     height: 25rem;
     width: 100%;
   }
-  main.main-content section.headline .content {
+  .main-content section.headline .content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     -moz-column-gap: 3rem;
          column-gap: 3rem;
   }
-  main.main-content section.headline .content .headline-title {
+  .main-content section.headline .content .headline-title {
     font-size: 5rem;
     font-weight: 700;
   }
-  main.main-content section.headline .content .headline-excerpt {
+  .main-content section.headline .content .headline-excerpt {
     margin-top: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: start;
   }
-  main.main-content section.new {
+  .main-content section.new {
     margin-top: 0;
   }
   section.featured-article {
